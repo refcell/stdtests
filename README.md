@@ -1,39 +1,22 @@
 <img align="right" width="150" height="150" top="100" src="./assets/readme.jpg">
 
-# femplate • [![tests](https://github.com/abigger87/femplate/actions/workflows/tests.yml/badge.svg)](https://github.com/abigger87/femplate/actions/workflows/tests.yml) [![lints](https://github.com/abigger87/femplate/actions/workflows/lints.yml/badge.svg)](https://github.com/abigger87/femplate/actions/workflows/lints.yml) ![GitHub](https://img.shields.io/github/license/abigger87/femplate)  ![GitHub package.json version](https://img.shields.io/github/package-json/v/abigger87/femplate)
+# stdtests • [![tests](https://github.com/abigger87/stdtests/actions/workflows/tests.yml/badge.svg)](https://github.com/abigger87/stdtests/actions/workflows/tests.yml) [![lints](https://github.com/abigger87/stdtests/actions/workflows/lints.yml/badge.svg)](https://github.com/abigger87/stdtests/actions/workflows/lints.yml) ![GitHub](https://img.shields.io/github/license/abigger87/stdtests)  ![GitHub package.json version](https://img.shields.io/github/package-json/v/abigger87/stdtests)
 
 
-Robust Template for Foundry Projects.
+Tests with the Forge Standard Library.
 
-## Getting Started
-
-Click `use this template` on [Github](https://github.com/abigger87/femplate) to create a new repository with this repo as the initial state.
-
-Or, if your repo already exists, run:
-```sh
-forge init --template https://github.com/abigger87/femplate
-git submodule update --init --recursive
-forge install
-```
-
-Run `make rename` to rename all instances of `femplate` with the name of your project/repository.
 
 ## Blueprint
 
 ```ml
 lib
-├─ ds-test — https://github.com/dapphub/ds-test
 ├─ forge-std — https://github.com/brockelmore/forge-std
 ├─ solmate — https://github.com/Rari-Capital/solmate
-├─ clones-with-immutable-args — https://github.com/wighawag/clones-with-immutable-args
 src
-├─ tests
-│  └─ Greeter.t — "Greeter Tests"
-└─ Greeter — "A Minimal Greeter Contract"
+└─ ...
 ```
 
 ## Development
-
 
 **Setup**
 ```bash
@@ -51,18 +34,6 @@ make build
 ```bash
 make test
 ```
-
-**Deployment & Verification**
-
-Inside the [`scripts/`](./scripts/) directory are a few preconfigured scripts that can be used to deploy and verify contracts.
-
-Scripts take inputs from the cli, using silent mode to hide any sensitive information.
-
-NOTE: These scripts are required to be _executable_ meaning they must be made executable by running `chmod +x ./scripts/*`.
-
-NOTE: For local deployment, make sure to run `yarn` or `npm install` before running the `deploy_local.sh` script. Otherwise, hardhat will error due to missing dependencies.
-
-NOTE: these scripts will prompt you for the contract name and deployed addresses (when verifying). Also, they use the `-i` flag on `forge` to ask for your private key for deployment. This uses silent mode which keeps your private key from being printed to the console (and visible in logs).
 
 ### First time with Forge/Foundry?
 
@@ -84,16 +55,6 @@ foundryup
 
 🎉 Foundry is installed! 🎉
 
-### Writing Tests with Foundry
-
-With [Foundry](https://gakonst.xyz), tests are written in Solidity! 🥳
-
-Create a test file for your contract in the `src/tests/` directory.
-
-For example, [`src/Greeter.sol`](./src/Greeter.sol) has its test file defined in [`./src/tests/Greeter.t.sol`](./src/tests/Greeter.t.sol).
-
-To learn more about writing tests in Solidity for Foundry, reference Rari Capital's [solmate](https://github.com/Rari-Capital/solmate/tree/main/src/test) repository created by [@transmissions11](https://twitter.com/transmissions11).
-
 ### Configure Foundry
 
 Using [foundry.toml](./foundry.toml), Foundry is easily configurable.
@@ -102,7 +63,7 @@ For a full list of configuration options, see the Foundry [configuration documen
 
 ## License
 
-[AGPL-3.0-only](https://github.com/abigger87/femplate/blob/master/LICENSE)
+[AGPL-3.0-only](https://github.com/abigger87/stdtests/blob/master/LICENSE)
 
 ## Acknowledgements
 
@@ -110,7 +71,6 @@ For a full list of configuration options, see the Foundry [configuration documen
 - [foundry](https://github.com/gakonst/foundry)
 - [solmate](https://github.com/Rari-Capital/solmate)
 - [forge-std](https://github.com/brockelmore/forge-std)
-- [clones-with-immutable-args](https://github.com/wighawag/clones-with-immutable-args).
 - [foundry-toolchain](https://github.com/onbjerg/foundry-toolchain) by [onbjerg](https://github.com/onbjerg).
 - [forge-template](https://github.com/FrankieIsLost/forge-template) by [FrankieIsLost](https://github.com/FrankieIsLost).
 - [Georgios Konstantopoulos](https://github.com/gakonst) for [forge-template](https://github.com/gakonst/forge-template) resource.
