@@ -5,17 +5,15 @@
 
 Extensive Tests with the Forge Standard Library.
 
-**Setup**
+**Get Foundry Installed**
+```bash
+curl -L https://foundry.paradigm.xyz | bash
+foundryup
+```
+
+**Run The Tests**
 ```bash
 forge install
-```
-
-**Building**
-```bash
 forge build
-```
-
-**Testing**
-```bash
 forge test
 ```
