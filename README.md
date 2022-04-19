@@ -1,4 +1,4 @@
-<img align="right" width="150" height="150" top="100" src="./assets/testtube.png">
+<img align="right" width="150" height="150" top="100" src="./assets/testtube.jpg">
 
 # stdtests • [![tests](https://github.com/abigger87/stdtests/actions/workflows/tests.yml/badge.svg)](https://github.com/abigger87/stdtests/actions/workflows/tests.yml)
 
